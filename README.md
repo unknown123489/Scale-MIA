@@ -31,7 +31,7 @@ sudo apt install python3-pip
 **Download:**
 After obtaining all necessary packages, users can download our code with the following command:
 ```
-git clone https://gitfront.io/r/unknown/1WybGFsyiygW/Scale-MIA.git
+git clone https://github.com/unknown123489/Scale-MIA.git
 ```
 
 **Repository Structure:**
