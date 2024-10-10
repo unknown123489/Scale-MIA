@@ -45,8 +45,8 @@ This repository is organized according to the experiment datasets and target sys
 ## Artifact Evaluation
 **Image Reconstruction Results:**
 For all folders, there are mainly three Python files realizing the Scale-MIA attack, including the fedavg-adv-train.py, fedavg-para-gen.py, and fedavg-recover-attack.py. 
-* The first one is in charge of training a surrogate autoencoder (Steps 1 to 3 in the attack flow). 
-* The second one is in charge of generating attack parameters (Steps 4 to 5 in the attack flow).
+* The first one is in charge of training a surrogate autoencoder (Steps 1 to 3 in the attack flow). (**Optional**)
+* The second one is in charge of generating attack parameters (Steps 4 to 5 in the attack flow). (**Optional**)
 * The third one is the main attack file, and users can change the parameters within this file such as batch_size, client_num, rounds, etc (Steps 6 to 8 in the attack flow).
 * Users can go into each folder (such as the fedavg-tinyimagenet) and execute them one by one to go through the whole attack process.
 ```
