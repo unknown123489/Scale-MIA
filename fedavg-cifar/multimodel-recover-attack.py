@@ -127,7 +127,7 @@ def attack(weight, bias, original_data, l1output, batch_size, idx):
     return round_num, round_mse_score, round_PSNR_score
 
 if __name__ == '__main__':
-    device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+    device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     torch.cuda.empty_cache()
     
     batch_size = args.batch_size
