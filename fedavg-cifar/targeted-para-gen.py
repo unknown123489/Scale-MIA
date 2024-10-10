@@ -27,7 +27,7 @@ def get_activation(name):
         activation[name] = output.detach()
     return hook
 sample_num=15000
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 batch_size = 100
 transform = transforms.Compose([transforms.ToTensor(),])
 
