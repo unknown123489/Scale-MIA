@@ -21,7 +21,7 @@ def get_activation(name):
         activation[name] = output.detach()
     return hook
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 batch_size = 100
 dataset=pd.read_csv("hmnist_28_28_L.csv")
 X=torch.Tensor(dataset.iloc[:,:-1].values).view(-1,1,28,28)/255
