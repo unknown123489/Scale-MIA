@@ -17,7 +17,7 @@ from nets.CNNencoder import Encoder
 from nets.CNNdecoder import Decoder
 import pandas as pd
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 print(device)
 batch_size = 20
