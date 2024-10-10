@@ -22,7 +22,7 @@ def get_activation(name):
         activation[name] = output.detach()
     return hook
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 batch_size = 100
 train_dataset = mnist.FashionMNIST(root='./train', train=True, transform=ToTensor(), download=True)
 test_dataset = mnist.FashionMNIST(root='./test', train=False, transform=ToTensor(), download=True)
