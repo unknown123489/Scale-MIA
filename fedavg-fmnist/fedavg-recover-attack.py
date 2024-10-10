@@ -93,7 +93,7 @@ def get_args():
 
 # The user can change different attack parameters to test different attack results
 if __name__ == '__main__':
-    device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+    device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
     torch.cuda.empty_cache()
     args=get_args()
     
