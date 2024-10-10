@@ -24,7 +24,7 @@ def get_activation(name):
         activation[name] = output.detach()
     return hook
 
-device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
+device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 batch_size = 100
 transform = transforms.Compose([transforms.ToTensor(),])
 train_dataset = torchvision.datasets.CIFAR10(root='./train', train=True, download=True, transform=transform)
