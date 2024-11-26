@@ -1,5 +1,5 @@
 # Scale-MIA Artifact
-This repository contains the software artifact of the NDSS'25 submission "Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction". For reference, please check the following Bibtex.
+This repository contains the software artifact of the NDSS'25 paper "Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction." Please check the following Bibtex for reference.
 ```
 @misc{shi2023scalemiascalablemodelinversion,
       title={Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction}, 
