@@ -18,7 +18,7 @@ Particularly, our artifact offers flexible interfaces, allowing users to modify 
 
 ## Get Started
 **Hardware Requirements:**
-We run all the experiments on a server equipped with an Intel Core i7-8700K CPU\@ 3.70GHz*12, two GeForce RTX 3080 Ti GPUs, and Ubuntu 18.04.3 LTS. 
+We run all the experiments on a server equipped with an Intel Core i7-8700K CPU\@ 3.70GHz*12, two GeForce RTX 2080 Ti GPUs, and Ubuntu 18.04.3 LTS. 
 
 **Software Requirements:**
 This implementation is Pytorch-based and requires the following packages:
