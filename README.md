@@ -1,5 +1,16 @@
 # Scale-MIA Artifact
-This repository contains the software artifact of the NDSS'25 submission "Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction".
+This repository contains the software artifact of the NDSS'25 submission "Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction". For reference, please check the following Bibtex.
+```
+@misc{shi2023scalemiascalablemodelinversion,
+      title={Scale-MIA: A Scalable Model Inversion Attack against Secure Federated Learning via Latent Space Reconstruction}, 
+      author={Shanghao Shi and Ning Wang and Yang Xiao and Chaoyu Zhang and Yi Shi and Y. Thomas Hou and Wenjing Lou},
+      year={2023},
+      eprint={2311.05808},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2311.05808}, 
+}
+```
 
 ## Abstract
 Federated learning (FL) has been widely regarded as a privacy-preserving distributed learning paradigm. However, in this work, we propose a novel model inversion attack named Scale-MIA that breaks this property to have the malicious server reconstruct private local samples hold by the clients, even when the FL system is protected by the state-of-the-art secure aggregation mechanism. To achieve this, the attacker modifies the global model's parameters before sending it to the clients. The clients, without finding the stealthy and unnoticeable modifications, will train the local models according to the adversarial global model and send their model updates back. Then the attacker, i.e. the server, receives the aggregation of these model updates when the secure aggregation mechanism is in place, and can reconstruct local training samples from them with an efficient analytical method. Compared to the existing work, Scale-MIA is stealthier without the need to modify the model architecture; more efficient, which does not rely on any costly optimization process during the attack phase; and can reconstruct large-scale local sample batches. In this artifact, we show how we implement our attack based on the PyTorch framework. We will demonstrate how the attack is implemented in detail and how the results and figures in the paper are generated. 
